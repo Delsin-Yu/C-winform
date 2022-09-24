@@ -32,403 +32,654 @@ namespace Assignment_1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Meun_Index));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.MenuItem1 = new System.Windows.Forms.Label();
+            this.MenuItem2 = new System.Windows.Forms.Label();
+            this.MenuItem3 = new System.Windows.Forms.Label();
+            this.MenuItem4 = new System.Windows.Forms.Label();
+            this.MenuPrice1 = new System.Windows.Forms.Label();
+            this.MenuPrice2 = new System.Windows.Forms.Label();
+            this.MenuPrice3 = new System.Windows.Forms.Label();
+            this.MenuPrice4 = new System.Windows.Forms.Label();
+            this.MenuCount1 = new System.Windows.Forms.TextBox();
+            this.MenuCount2 = new System.Windows.Forms.TextBox();
+            this.MenuCount3 = new System.Windows.Forms.TextBox();
+            this.MenuCount4 = new System.Windows.Forms.TextBox();
+            this.OrderBtn = new System.Windows.Forms.Button();
+            this.ClrBtn = new System.Windows.Forms.Button();
+            this.SummaryBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button_Order_1 = new System.Windows.Forms.TextBox();
-            this.button_Order_2 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.button_Order_3 = new System.Windows.Forms.Label();
             this.button_Order_4 = new System.Windows.Forms.Label();
-            this.button_Order_5 = new System.Windows.Forms.TextBox();
-            this.button_Order_6 = new System.Windows.Forms.TextBox();
-            this.button_Order_7 = new System.Windows.Forms.TextBox();
+            this.ServerNameDisplay = new System.Windows.Forms.TextBox();
+            this.NumberPizzaOrderedDisplay = new System.Windows.Forms.TextBox();
+            this.TotalTableReciptsDisplay = new System.Windows.Forms.TextBox();
+            this.MenuContainer = new System.Windows.Forms.GroupBox();
+            this.Menus = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnSet = new System.Windows.Forms.TableLayoutPanel();
+            this.OrderSumPannel = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.CompanySumPannel = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.AvgTransDisplay = new System.Windows.Forms.TextBox();
+            this.CompanyTransaction = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TotalCompanyReceDisplay = new System.Windows.Forms.TextBox();
+            this.CompTransDisplay = new System.Windows.Forms.TextBox();
+            this.NumPizzaTotalDisplay = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.MenuContainer.SuspendLayout();
+            this.Menus.SuspendLayout();
+            this.BtnSet.SuspendLayout();
+            this.OrderSumPannel.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.CompanySumPannel.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // MenuItem1
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(229, 35);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(932, 293);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "  Menu";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.MenuItem1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuItem1.AutoSize = true;
+            this.MenuItem1.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuItem1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MenuItem1.Location = new System.Drawing.Point(2, 10);
+            this.MenuItem1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuItem1.Name = "MenuItem1";
+            this.MenuItem1.Size = new System.Drawing.Size(108, 18);
+            this.MenuItem1.TabIndex = 1;
+            this.MenuItem1.Text = " Ham Pizza";
+            this.MenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // MenuItem2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(408, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = " Ham Pizza";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.MenuItem2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuItem2.AutoSize = true;
+            this.MenuItem2.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuItem2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MenuItem2.Location = new System.Drawing.Point(2, 49);
+            this.MenuItem2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuItem2.Name = "MenuItem2";
+            this.MenuItem2.Size = new System.Drawing.Size(168, 18);
+            this.MenuItem2.TabIndex = 2;
+            this.MenuItem2.Text = " Pepperoni Pizza";
+            this.MenuItem2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // MenuItem3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Enabled = false;
-            this.label2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(408, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 30);
-            this.label2.TabIndex = 2;
-            this.label2.Text = " Pepperoni Pizza";
+            this.MenuItem3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuItem3.AutoSize = true;
+            this.MenuItem3.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuItem3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MenuItem3.Location = new System.Drawing.Point(2, 88);
+            this.MenuItem3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuItem3.Name = "MenuItem3";
+            this.MenuItem3.Size = new System.Drawing.Size(168, 18);
+            this.MenuItem3.TabIndex = 3;
+            this.MenuItem3.Text = " Pineapple Pizza";
+            this.MenuItem3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // MenuItem4
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Enabled = false;
-            this.label3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(408, 208);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(269, 30);
-            this.label3.TabIndex = 3;
-            this.label3.Text = " Pineapple Pizza";
+            this.MenuItem4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuItem4.AutoSize = true;
+            this.MenuItem4.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuItem4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MenuItem4.Location = new System.Drawing.Point(2, 128);
+            this.MenuItem4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuItem4.Name = "MenuItem4";
+            this.MenuItem4.Size = new System.Drawing.Size(88, 18);
+            this.MenuItem4.TabIndex = 4;
+            this.MenuItem4.Text = " Calzoni";
+            this.MenuItem4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // MenuPrice1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Enabled = false;
-            this.label4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(408, 275);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 30);
-            this.label4.TabIndex = 4;
-            this.label4.Text = " Calzoni";
+            this.MenuPrice1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuPrice1.AutoSize = true;
+            this.MenuPrice1.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.MenuPrice1.Location = new System.Drawing.Point(301, 9);
+            this.MenuPrice1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuPrice1.Name = "MenuPrice1";
+            this.MenuPrice1.Size = new System.Drawing.Size(76, 20);
+            this.MenuPrice1.TabIndex = 5;
+            this.MenuPrice1.Text = "@ € 7.99";
+            this.MenuPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // MenuPrice2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Enabled = false;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.label5.Location = new System.Drawing.Point(861, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 32);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "@ € 7.99";
+            this.MenuPrice2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuPrice2.AutoSize = true;
+            this.MenuPrice2.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.MenuPrice2.Location = new System.Drawing.Point(301, 48);
+            this.MenuPrice2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuPrice2.Name = "MenuPrice2";
+            this.MenuPrice2.Size = new System.Drawing.Size(76, 20);
+            this.MenuPrice2.TabIndex = 6;
+            this.MenuPrice2.Text = "@ € 8.99";
+            this.MenuPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // MenuPrice3
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Enabled = false;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.label6.Location = new System.Drawing.Point(861, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 32);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "@ € 8.99";
+            this.MenuPrice3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuPrice3.AutoSize = true;
+            this.MenuPrice3.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.MenuPrice3.Location = new System.Drawing.Point(301, 87);
+            this.MenuPrice3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuPrice3.Name = "MenuPrice3";
+            this.MenuPrice3.Size = new System.Drawing.Size(76, 20);
+            this.MenuPrice3.TabIndex = 7;
+            this.MenuPrice3.Text = "@ € 9.99";
+            this.MenuPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // MenuPrice4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Enabled = false;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.label7.Location = new System.Drawing.Point(861, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 32);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "@ € 9.99";
+            this.MenuPrice4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MenuPrice4.AutoSize = true;
+            this.MenuPrice4.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.MenuPrice4.Location = new System.Drawing.Point(301, 127);
+            this.MenuPrice4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuPrice4.Name = "MenuPrice4";
+            this.MenuPrice4.Size = new System.Drawing.Size(85, 20);
+            this.MenuPrice4.TabIndex = 8;
+            this.MenuPrice4.Text = "@ € 11.99";
+            this.MenuPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // MenuCount1
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Enabled = false;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.label8.Location = new System.Drawing.Point(861, 278);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 32);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "@ € 11.99";
+            this.MenuCount1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MenuCount1.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuCount1.Location = new System.Drawing.Point(241, 2);
+            this.MenuCount1.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuCount1.Multiline = true;
+            this.MenuCount1.Name = "MenuCount1";
+            this.MenuCount1.Size = new System.Drawing.Size(56, 35);
+            this.MenuCount1.TabIndex = 9;
+            this.MenuCount1.Text = "0";
+            this.MenuCount1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // MenuCount2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(747, 69);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 46);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.MenuCount2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MenuCount2.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuCount2.Location = new System.Drawing.Point(241, 41);
+            this.MenuCount2.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuCount2.Multiline = true;
+            this.MenuCount2.Name = "MenuCount2";
+            this.MenuCount2.Size = new System.Drawing.Size(56, 35);
+            this.MenuCount2.TabIndex = 10;
+            this.MenuCount2.Text = "0";
+            this.MenuCount2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // MenuCount3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(747, 137);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 46);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.MenuCount3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MenuCount3.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuCount3.Location = new System.Drawing.Point(241, 80);
+            this.MenuCount3.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuCount3.Multiline = true;
+            this.MenuCount3.Name = "MenuCount3";
+            this.MenuCount3.Size = new System.Drawing.Size(56, 35);
+            this.MenuCount3.TabIndex = 11;
+            this.MenuCount3.Text = "0";
+            this.MenuCount3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // MenuCount4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Location = new System.Drawing.Point(747, 205);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(62, 46);
-            this.textBox4.TabIndex = 11;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.MenuCount4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MenuCount4.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuCount4.Location = new System.Drawing.Point(241, 119);
+            this.MenuCount4.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuCount4.Multiline = true;
+            this.MenuCount4.Name = "MenuCount4";
+            this.MenuCount4.Size = new System.Drawing.Size(56, 36);
+            this.MenuCount4.TabIndex = 12;
+            this.MenuCount4.Text = "0";
+            this.MenuCount4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // OrderBtn
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Location = new System.Drawing.Point(747, 272);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(62, 46);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.OrderBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OrderBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.OrderBtn.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OrderBtn.Location = new System.Drawing.Point(15, 6);
+            this.OrderBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.OrderBtn.Name = "OrderBtn";
+            this.OrderBtn.Size = new System.Drawing.Size(110, 30);
+            this.OrderBtn.TabIndex = 14;
+            this.OrderBtn.Text = "Order";
+            this.OrderBtn.UseVisualStyleBackColor = false;
+            this.OrderBtn.Click += new System.EventHandler(this.OrderBtn_Click);
             // 
-            // textBox6
+            // ClrBtn
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(229, 334);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(932, 95);
-            this.textBox6.TabIndex = 13;
+            this.ClrBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ClrBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClrBtn.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ClrBtn.Location = new System.Drawing.Point(155, 6);
+            this.ClrBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ClrBtn.Name = "ClrBtn";
+            this.ClrBtn.Size = new System.Drawing.Size(110, 30);
+            this.ClrBtn.TabIndex = 15;
+            this.ClrBtn.Text = "Clear";
+            this.ClrBtn.UseVisualStyleBackColor = false;
+            this.ClrBtn.Click += new System.EventHandler(this.ClrBtn_Click);
             // 
-            // button1
+            // SummaryBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(294, 357);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 49);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Order";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SummaryBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SummaryBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SummaryBtn.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SummaryBtn.Location = new System.Drawing.Point(295, 6);
+            this.SummaryBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SummaryBtn.Name = "SummaryBtn";
+            this.SummaryBtn.Size = new System.Drawing.Size(110, 30);
+            this.SummaryBtn.TabIndex = 16;
+            this.SummaryBtn.Text = "Summary";
+            this.SummaryBtn.UseVisualStyleBackColor = false;
+            this.SummaryBtn.Click += new System.EventHandler(this.SummaryBtn_Click);
             // 
-            // button2
+            // ExitBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(516, 357);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 49);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(718, 357);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 49);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Summary";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(934, 357);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(151, 49);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ExitBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ExitBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ExitBtn.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ExitBtn.Location = new System.Drawing.Point(435, 6);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(110, 30);
+            this.ExitBtn.TabIndex = 17;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(517, 679);
+            this.pictureBox1.Location = new System.Drawing.Point(289, 463);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 105);
+            this.pictureBox1.Size = new System.Drawing.Size(161, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // button_Order_1
+            // label
             // 
-            this.button_Order_1.Enabled = false;
-            this.button_Order_1.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Order_1.Location = new System.Drawing.Point(229, 435);
-            this.button_Order_1.Multiline = true;
-            this.button_Order_1.Name = "button_Order_1";
-            this.button_Order_1.Size = new System.Drawing.Size(932, 204);
-            this.button_Order_1.TabIndex = 19;
-            this.button_Order_1.Text = "  Table Order Summary Data";
-            this.button_Order_1.TextChanged += new System.EventHandler(this.button_Order_1_TextChanged);
-            // 
-            // button_Order_2
-            // 
-            this.button_Order_2.AutoSize = true;
-            this.button_Order_2.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_2.Enabled = false;
-            this.button_Order_2.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Order_2.Location = new System.Drawing.Point(408, 476);
-            this.button_Order_2.Name = "button_Order_2";
-            this.button_Order_2.Size = new System.Drawing.Size(205, 30);
-            this.button_Order_2.TabIndex = 20;
-            this.button_Order_2.Text = "Service Name";
+            this.label.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.SystemColors.Control;
+            this.label.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label.Location = new System.Drawing.Point(2, 7);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(118, 18);
+            this.label.TabIndex = 20;
+            this.label.Text = "Server Name";
             // 
             // button_Order_3
             // 
+            this.button_Order_3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_Order_3.AutoSize = true;
             this.button_Order_3.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_3.Enabled = false;
-            this.button_Order_3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Order_3.Location = new System.Drawing.Point(408, 528);
+            this.button_Order_3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Order_3.Location = new System.Drawing.Point(2, 40);
+            this.button_Order_3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.button_Order_3.Name = "button_Order_3";
-            this.button_Order_3.Size = new System.Drawing.Size(365, 30);
+            this.button_Order_3.Size = new System.Drawing.Size(228, 18);
             this.button_Order_3.TabIndex = 21;
             this.button_Order_3.Text = "Number Pizza\'s Ordered";
             // 
             // button_Order_4
             // 
+            this.button_Order_4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_Order_4.AutoSize = true;
             this.button_Order_4.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_4.Enabled = false;
-            this.button_Order_4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_Order_4.Location = new System.Drawing.Point(408, 587);
+            this.button_Order_4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Order_4.Location = new System.Drawing.Point(2, 74);
+            this.button_Order_4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.button_Order_4.Name = "button_Order_4";
-            this.button_Order_4.Size = new System.Drawing.Size(333, 30);
+            this.button_Order_4.Size = new System.Drawing.Size(208, 18);
             this.button_Order_4.TabIndex = 22;
             this.button_Order_4.Text = "Total Table Receipts";
             // 
-            // button_Order_5
+            // ServerNameDisplay
             // 
-            this.button_Order_5.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_5.Enabled = false;
-            this.button_Order_5.Location = new System.Drawing.Point(867, 473);
-            this.button_Order_5.Multiline = true;
-            this.button_Order_5.Name = "button_Order_5";
-            this.button_Order_5.Size = new System.Drawing.Size(148, 46);
-            this.button_Order_5.TabIndex = 23;
-            this.button_Order_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.button_Order_5.TextChanged += new System.EventHandler(this.button_Order_5_TextChanged);
+            this.ServerNameDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.ServerNameDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ServerNameDisplay.Enabled = false;
+            this.ServerNameDisplay.Location = new System.Drawing.Point(307, 2);
+            this.ServerNameDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.ServerNameDisplay.Multiline = true;
+            this.ServerNameDisplay.Name = "ServerNameDisplay";
+            this.ServerNameDisplay.Size = new System.Drawing.Size(166, 29);
+            this.ServerNameDisplay.TabIndex = 23;
+            this.ServerNameDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button_Order_6
+            // NumberPizzaOrderedDisplay
             // 
-            this.button_Order_6.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_6.Enabled = false;
-            this.button_Order_6.Location = new System.Drawing.Point(867, 525);
-            this.button_Order_6.Multiline = true;
-            this.button_Order_6.Name = "button_Order_6";
-            this.button_Order_6.Size = new System.Drawing.Size(148, 46);
-            this.button_Order_6.TabIndex = 24;
-            this.button_Order_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.button_Order_6.TextChanged += new System.EventHandler(this.button_Order_6_TextChanged);
+            this.NumberPizzaOrderedDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.NumberPizzaOrderedDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumberPizzaOrderedDisplay.Enabled = false;
+            this.NumberPizzaOrderedDisplay.Location = new System.Drawing.Point(307, 35);
+            this.NumberPizzaOrderedDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.NumberPizzaOrderedDisplay.Multiline = true;
+            this.NumberPizzaOrderedDisplay.Name = "NumberPizzaOrderedDisplay";
+            this.NumberPizzaOrderedDisplay.Size = new System.Drawing.Size(166, 29);
+            this.NumberPizzaOrderedDisplay.TabIndex = 24;
+            this.NumberPizzaOrderedDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button_Order_7
+            // TotalTableReciptsDisplay
             // 
-            this.button_Order_7.BackColor = System.Drawing.SystemColors.Control;
-            this.button_Order_7.Enabled = false;
-            this.button_Order_7.Location = new System.Drawing.Point(867, 584);
-            this.button_Order_7.Multiline = true;
-            this.button_Order_7.Name = "button_Order_7";
-            this.button_Order_7.Size = new System.Drawing.Size(148, 46);
-            this.button_Order_7.TabIndex = 25;
-            this.button_Order_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TotalTableReciptsDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.TotalTableReciptsDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TotalTableReciptsDisplay.Enabled = false;
+            this.TotalTableReciptsDisplay.Location = new System.Drawing.Point(307, 68);
+            this.TotalTableReciptsDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalTableReciptsDisplay.Multiline = true;
+            this.TotalTableReciptsDisplay.Name = "TotalTableReciptsDisplay";
+            this.TotalTableReciptsDisplay.Size = new System.Drawing.Size(166, 30);
+            this.TotalTableReciptsDisplay.TabIndex = 25;
+            this.TotalTableReciptsDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MenuContainer
+            // 
+            this.MenuContainer.Controls.Add(this.Menus);
+            this.MenuContainer.Location = new System.Drawing.Point(95, 12);
+            this.MenuContainer.Name = "MenuContainer";
+            this.MenuContainer.Size = new System.Drawing.Size(561, 184);
+            this.MenuContainer.TabIndex = 26;
+            this.MenuContainer.TabStop = false;
+            this.MenuContainer.Text = "Menu";
+            // 
+            // Menus
+            // 
+            this.Menus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Menus.ColumnCount = 3;
+            this.Menus.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.52632F));
+            this.Menus.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.66376F));
+            this.Menus.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.89956F));
+            this.Menus.Controls.Add(this.MenuItem1, 0, 0);
+            this.Menus.Controls.Add(this.MenuItem2, 0, 1);
+            this.Menus.Controls.Add(this.MenuItem3, 0, 2);
+            this.Menus.Controls.Add(this.MenuItem4, 0, 3);
+            this.Menus.Controls.Add(this.MenuCount1, 1, 0);
+            this.Menus.Controls.Add(this.MenuCount2, 1, 1);
+            this.Menus.Controls.Add(this.MenuCount3, 1, 2);
+            this.Menus.Controls.Add(this.MenuCount4, 1, 3);
+            this.Menus.Controls.Add(this.MenuPrice1, 2, 0);
+            this.Menus.Controls.Add(this.MenuPrice2, 2, 1);
+            this.Menus.Controls.Add(this.MenuPrice3, 2, 2);
+            this.Menus.Controls.Add(this.MenuPrice4, 2, 3);
+            this.Menus.Location = new System.Drawing.Point(39, 24);
+            this.Menus.Name = "Menus";
+            this.Menus.RowCount = 4;
+            this.Menus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Menus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Menus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Menus.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.Menus.Size = new System.Drawing.Size(475, 157);
+            this.Menus.TabIndex = 0;
+            // 
+            // BtnSet
+            // 
+            this.BtnSet.ColumnCount = 4;
+            this.BtnSet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BtnSet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BtnSet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BtnSet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.BtnSet.Controls.Add(this.OrderBtn, 0, 0);
+            this.BtnSet.Controls.Add(this.ClrBtn, 1, 0);
+            this.BtnSet.Controls.Add(this.SummaryBtn, 2, 0);
+            this.BtnSet.Controls.Add(this.ExitBtn, 3, 0);
+            this.BtnSet.Location = new System.Drawing.Point(95, 202);
+            this.BtnSet.Name = "BtnSet";
+            this.BtnSet.RowCount = 1;
+            this.BtnSet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.BtnSet.Size = new System.Drawing.Size(561, 42);
+            this.BtnSet.TabIndex = 27;
+            // 
+            // OrderSumPannel
+            // 
+            this.OrderSumPannel.Controls.Add(this.tableLayoutPanel2);
+            this.OrderSumPannel.Location = new System.Drawing.Point(95, 255);
+            this.OrderSumPannel.Name = "OrderSumPannel";
+            this.OrderSumPannel.Size = new System.Drawing.Size(561, 193);
+            this.OrderSumPannel.TabIndex = 28;
+            this.OrderSumPannel.TabStop = false;
+            this.OrderSumPannel.Text = "Table Order Summary Data";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.21053F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.78947F));
+            this.tableLayoutPanel2.Controls.Add(this.label, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button_Order_3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button_Order_4, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.TotalTableReciptsDisplay, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.ServerNameDisplay, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.NumberPizzaOrderedDisplay, 1, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(39, 27);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(475, 100);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // CompanySumPannel
+            // 
+            this.CompanySumPannel.Controls.Add(this.tableLayoutPanel3);
+            this.CompanySumPannel.Location = new System.Drawing.Point(95, 255);
+            this.CompanySumPannel.Name = "CompanySumPannel";
+            this.CompanySumPannel.Size = new System.Drawing.Size(561, 193);
+            this.CompanySumPannel.TabIndex = 29;
+            this.CompanySumPannel.TabStop = false;
+            this.CompanySumPannel.Text = "Company Summary Data";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.21053F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.78947F));
+            this.tableLayoutPanel3.Controls.Add(this.AvgTransDisplay, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.CompanyTransaction, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.TotalCompanyReceDisplay, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.CompTransDisplay, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.NumPizzaTotalDisplay, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(39, 27);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 4;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(475, 147);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // AvgTransDisplay
+            // 
+            this.AvgTransDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.AvgTransDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AvgTransDisplay.Enabled = false;
+            this.AvgTransDisplay.Location = new System.Drawing.Point(307, 110);
+            this.AvgTransDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.AvgTransDisplay.Multiline = true;
+            this.AvgTransDisplay.Name = "AvgTransDisplay";
+            this.AvgTransDisplay.Size = new System.Drawing.Size(166, 35);
+            this.AvgTransDisplay.TabIndex = 27;
+            this.AvgTransDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CompanyTransaction
+            // 
+            this.CompanyTransaction.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CompanyTransaction.AutoSize = true;
+            this.CompanyTransaction.BackColor = System.Drawing.SystemColors.Control;
+            this.CompanyTransaction.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CompanyTransaction.Location = new System.Drawing.Point(2, 9);
+            this.CompanyTransaction.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CompanyTransaction.Name = "CompanyTransaction";
+            this.CompanyTransaction.Size = new System.Drawing.Size(268, 18);
+            this.CompanyTransaction.TabIndex = 20;
+            this.CompanyTransaction.Text = "Total Company Transactions";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(2, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 18);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Number Pizza\'s Ordered";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(2, 81);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 18);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Total Company Receipts";
+            // 
+            // TotalCompanyReceDisplay
+            // 
+            this.TotalCompanyReceDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.TotalCompanyReceDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TotalCompanyReceDisplay.Enabled = false;
+            this.TotalCompanyReceDisplay.Location = new System.Drawing.Point(307, 74);
+            this.TotalCompanyReceDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalCompanyReceDisplay.Multiline = true;
+            this.TotalCompanyReceDisplay.Name = "TotalCompanyReceDisplay";
+            this.TotalCompanyReceDisplay.Size = new System.Drawing.Size(166, 32);
+            this.TotalCompanyReceDisplay.TabIndex = 25;
+            this.TotalCompanyReceDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CompTransDisplay
+            // 
+            this.CompTransDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.CompTransDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CompTransDisplay.Enabled = false;
+            this.CompTransDisplay.Location = new System.Drawing.Point(307, 2);
+            this.CompTransDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.CompTransDisplay.Multiline = true;
+            this.CompTransDisplay.Name = "CompTransDisplay";
+            this.CompTransDisplay.Size = new System.Drawing.Size(166, 32);
+            this.CompTransDisplay.TabIndex = 23;
+            this.CompTransDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // NumPizzaTotalDisplay
+            // 
+            this.NumPizzaTotalDisplay.BackColor = System.Drawing.SystemColors.Control;
+            this.NumPizzaTotalDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumPizzaTotalDisplay.Enabled = false;
+            this.NumPizzaTotalDisplay.Location = new System.Drawing.Point(307, 38);
+            this.NumPizzaTotalDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.NumPizzaTotalDisplay.Multiline = true;
+            this.NumPizzaTotalDisplay.Name = "NumPizzaTotalDisplay";
+            this.NumPizzaTotalDisplay.Size = new System.Drawing.Size(166, 32);
+            this.NumPizzaTotalDisplay.TabIndex = 24;
+            this.NumPizzaTotalDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(2, 118);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 18);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Avg Transaction Value";
             // 
             // Meun_Index
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1365, 831);
-            this.Controls.Add(this.button_Order_7);
-            this.Controls.Add(this.button_Order_6);
-            this.Controls.Add(this.button_Order_5);
-            this.Controls.Add(this.button_Order_4);
-            this.Controls.Add(this.button_Order_3);
-            this.Controls.Add(this.button_Order_2);
-            this.Controls.Add(this.button_Order_1);
+            this.ClientSize = new System.Drawing.Size(746, 566);
+            this.Controls.Add(this.MenuContainer);
+            this.Controls.Add(this.BtnSet);
+            this.Controls.Add(this.CompanySumPannel);
+            this.Controls.Add(this.OrderSumPannel);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Meun_Index";
             this.Text = "meun_name_number_show";
-            this.Load += new System.EventHandler(this.Meun_Index_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MenuContainer.ResumeLayout(false);
+            this.Menus.ResumeLayout(false);
+            this.Menus.PerformLayout();
+            this.BtnSet.ResumeLayout(false);
+            this.OrderSumPannel.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.CompanySumPannel.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label MenuItem1;
+        private System.Windows.Forms.Label MenuItem2;
+        private System.Windows.Forms.Label MenuItem3;
+        private System.Windows.Forms.Label MenuItem4;
+        private System.Windows.Forms.Label MenuPrice1;
+        private System.Windows.Forms.Label MenuPrice2;
+        private System.Windows.Forms.Label MenuPrice3;
+        private System.Windows.Forms.Label MenuPrice4;
+        private System.Windows.Forms.TextBox MenuCount1;
+        private System.Windows.Forms.TextBox MenuCount2;
+        private System.Windows.Forms.TextBox MenuCount3;
+        private System.Windows.Forms.TextBox MenuCount4;
+        private System.Windows.Forms.Button OrderBtn;
+        private System.Windows.Forms.Button ClrBtn;
+        private System.Windows.Forms.Button SummaryBtn;
+        private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox button_Order_1;
-        private System.Windows.Forms.Label button_Order_2;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label button_Order_3;
         private System.Windows.Forms.Label button_Order_4;
-        private System.Windows.Forms.TextBox button_Order_5;
-        private System.Windows.Forms.TextBox button_Order_6;
-        private System.Windows.Forms.TextBox button_Order_7;
+        private System.Windows.Forms.TextBox ServerNameDisplay;
+        private System.Windows.Forms.TextBox NumberPizzaOrderedDisplay;
+        private System.Windows.Forms.TextBox TotalTableReciptsDisplay;
+        private System.Windows.Forms.GroupBox MenuContainer;
+        private System.Windows.Forms.TableLayoutPanel Menus;
+        private System.Windows.Forms.TableLayoutPanel BtnSet;
+        private System.Windows.Forms.GroupBox OrderSumPannel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.GroupBox CompanySumPannel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label CompanyTransaction;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TotalCompanyReceDisplay;
+        private System.Windows.Forms.TextBox CompTransDisplay;
+        private System.Windows.Forms.TextBox NumPizzaTotalDisplay;
+        private System.Windows.Forms.TextBox AvgTransDisplay;
+        private System.Windows.Forms.Label label1;
     }
 }
