@@ -1,31 +1,62 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_1
 {
-    public class Database
+    public class RuntimeData : Singleton<RuntimeData>
     {
-        //singleton pattern
-        private static Database database_1=null;
+        public string server_name;
+        public int table_number;
+        public int number_ordered;
 
-        public static Database database
+        private readonly Queue<Dictionary<string, int>> m_HistorySales = new Queue<Dictionary<string, int>>();
+
+        public void AddHistorySales(Dictionary<string, int> data) => m_HistorySales.Enqueue(data);
+
+        public int GetTransactionCounts() => m_HistorySales.Count;
+        public int GetPizzaOrderedCounts() => m_HistorySales.SelectMany(x => x.Select(y => y.Value)).Sum();
+        public decimal GetPizzaTotalRecepts()
+        {
+            var dbInstance = Database.Instance;
+            return m_HistorySales.SelectMany(x => x.Select(y => dbInstance.GetPrice(y.Key, y.Value))).Sum();
+        }
+        public decimal GetAVGTransaction() => GetPizzaTotalRecepts() / GetTransactionCounts();
+    }
+
+    public class Database : Singleton<Database>
+    {
+        private readonly Dictionary<string, decimal> m_Price;
+        public Database() => m_Price = new Dictionary<string, decimal>()
+            {
+                { "Ham Pizza", 7.99m },
+                { "Pepperoni Pizza", 8.99m },
+                { "Pineapple Pizza", 9.99m },
+                { "Calzoni", 11.99m }
+            };
+
+        public decimal GetPrice(string pizzaName, int orderCount) => m_Price.TryGetValue(pizzaName, out var price) ? price * orderCount : 0;
+
+        public (string ItemName, decimal ItemPrice) GetInfoAtIndex(int index)
+        {
+            var data = m_Price.ElementAt(index);
+            return (data.Key, data.Value);
+        }
+    }
+
+    public abstract class Singleton<T> where T : class, new()
+    {
+        private static T s_Instance;
+        public static T Instance
         {
             get
             {
-                if (database_1 == null)
-                    database_1 = new Database();
-                return database_1;
-
+                if (s_Instance == null)
+                {
+                    s_Instance = new T();
+                }
+                return s_Instance;
             }
         }
-
-        public string service_name;
-        public string table_number;
-        public string meun_name_number;
-        public int number_ordered;
 
     }
 }
