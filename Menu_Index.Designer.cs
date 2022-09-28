@@ -3,7 +3,7 @@ using System.Security.Authentication.ExtendedProtection;
 
 namespace Assignment_1
 {
-    partial class Meun_Index
+    partial class Menu_Index
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace Assignment_1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Meun_Index));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Index));
             this.MenuItem1 = new System.Windows.Forms.Label();
             this.MenuItem2 = new System.Windows.Forms.Label();
             this.MenuItem3 = new System.Windows.Forms.Label();
